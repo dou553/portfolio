@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>杨招娣 | B2B内容营销专家</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">✨</span>
+                <span class="logo-text">杨招娣</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#portfolio" class="nav-link">作品</a></li>
+                <li><a href="#experience" class="nav-link">经历</a></li>
+                <li><a href="#about" class="nav-link">关于</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页英雄区 -->
+    <section id="home" class="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">🎯 B2B内容营销专家</div>
+            <h1 class="hero-name">
+                <span class="name-char" style="--delay:0">杨</span><span class="name-char" style="--delay:1">招</span><span class="name-char" style="--delay:2">娣</span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="subtitle-line line-1">5年+ B2B企业与全渠道内容运营经验</span>
+                <span class="subtitle-line line-2">擅长从0到1搭建新媒体矩阵 · 内容获客与私域转化</span>
+            </p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> 查看作品
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> 联系我
+                </a>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <div class="floating-shape shape-1">📊</div>
+            <div class="floating-shape shape-2">🎨</div>
+            <div class="floating-shape shape-3">✍️</div>
+            <div class="floating-shape shape-4">🚀</div>
+        </div>
+        <div class="scroll-hint">
+            <span>向下滚动</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- 作品展示区 -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">💼 作品展示</span>
+                <h2 class="section-title">精选营销作品</h2>
+                <p class="section-subtitle">每个作品背后，都是对产品宣发与用户心理的思考</p>
+            </div>
+
+            <!-- 分类筛选 -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th-large"></i> 全部
+                </button>
+                <button class="filter-btn" data-filter="content">
+                    <i class="fas fa-file-alt"></i> 内容营销体系
+                </button>
+                <button class="filter-btn" data-filter="multi-channel">
+                    <i class="fas fa-network-wired"></i> 多渠道运营
+                </button>
+                <button class="filter-btn" data-filter="growth">
+                    <i class="fas fa-chart-line"></i> 增长运营项目
+                </button>
+                <button class="filter-btn" data-filter="video">
+                    <i class="fas fa-video"></i> 视频与品牌传播
+                </button>
+            </div>
+
+            <!-- 作品网格 -->
+            <div class="portfolio-grid">
+                
+                <!-- 内容营销体系 -->
+                <div class="portfolio-section" data-category="content">
+                    <div class="section-intro content-intro">
+                        <h3 class="intro-title">📚 内容营销体系 <span class="subtitle-en">Thought Leadership</span></h3>
+                        <p class="intro-desc intro-highlight">
+                            <strong>我相信好的 B2B 内容不只是信息的堆砌，而是要让复杂的产品价值变得易懂、可信、可传播。</strong>
+                            从行业白皮书到客户案例，我擅长用故事化的方式建立信任，用数据化的成果证明价值。
+                        </p>
+                    </div>
+                    
+                    <!-- 双栏布局：白皮书 + 产品宣发 -->
+                    <div class="content-dual-layout">
+                        <!-- 左侧：白皮书阵列 -->
+                        <div class="dual-card">
+                            <div class="dual-card-header">
+                                <div class="dual-icon">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <div class="dual-title-group">
+                                    <h4>核心白皮书与资产库</h4>
+                                    <span class="dual-subtitle">深度信任背书</span>
+                                </div>
+                            </div>
+                            <div class="dual-value-prop">
+                                <span class="value-highlight">10+ 本</span>
+                                <span class="value-desc">深度行业资料，为销售及 BD 团队沉淀大客户打单的核心信任工具包</span>
+                            </div>
+                            <div class="whitepaper-list">
+                                <div class="wp-item" onclick="openModal('whitepaper1')">
+                                    <div class="wp-cover">
+                                        <img src="assets/ai-market-overview-2025.png" alt="2026 AI招聘应用趋势与战略指南">
+                                    </div>
+                                    <div class="wp-info">
+                                        <h5>《2026 AI招聘应用趋势与战略指南》</h5>
+                                        <p>37页深度PPT，系统阐述AI在招聘场景的应用趋势与落地战略</p>
+                                    </div>
+                                </div>
+                                <div class="wp-item" onclick="openModal('whitepaper2')">
+                                    <div class="wp-cover">
+                                        <img src="assets/haina-case-cover.png" alt="海纳AI面试官案例实操指南">
+                                    </div>
+                                    <div class="wp-info">
+                                        <h5>《海纳AI面试官案例实操指南》</h5>
+                                        <p>深度拆解 AI 技术落地实操，降低大客户决策门槛</p>
+                                    </div>
+                                </div>
+                                <div class="wp-item" onclick="openModal('guide1')">
+                                    <div class="wp-cover">
+                                        <img src="assets/b2b-live-guide-cover.png" alt="B2B企业直播搭建指南">
+                                    </div>
+                                    <div class="wp-info">
+                                        <h5>《B2B企业直播搭建指南》&《B2B社群运营指南》</h5>
+                                        <p>沉淀垂直赛道实操方法论</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 右侧：产品宣发矩阵 -->
+                        <div class="dual-card">
+                            <div class="dual-card-header">
+                                <div class="dual-icon promo-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="dual-title-group">
+                                    <h4>产品动态宣发矩阵</h4>
+                                    <span class="dual-subtitle">技术价值转化</span>
+                                </div>
+                            </div>
+                            <div class="dual-value-prop">
+                                <span class="value-highlight">每月 1-2 篇</span>
+                                <span class="value-desc">紧跟技术研发迭代节奏，实现"技术语言"向"客户大白话"的精准转化</span>
+                            </div>
+                            <div class="promo-matrix">
+                                <!-- 技术深度文章与最佳实践 -->
+                                <div class="matrix-group">
+                                    <div class="matrix-group-header">
+                                        <span class="matrix-icon">📰</span>
+                                        <h5>技术深度文章与最佳实践</h5>
+                                    </div>
+                                    <div class="matrix-group-articles">
+                                        <a href="https://mp.weixin.qq.com/s/HRQ7akJxco7eOE2wFqsybg" target="_blank" rel="noopener noreferrer" class="matrix-article-link">
+                                            <span class="article-title">告别流水线面试！揭秘AI智能升级如何让招聘效率提升300%</span>
+                                            <span class="link-indicator"><i class="fas fa-external-link-alt"></i> 点击查看</span>
+                                        </a>
+                                        <a href="https://mp.weixin.qq.com/s/fCGNJC6F5LnmOHCzaN94pQ" target="_blank" rel="noopener noreferrer" class="matrix-article-link">
+                                            <span class="article-title">智能制造HR的智能革命：AI面试官让招聘效率翻倍，成本直降35%</span>
+                                            <span class="link-indicator"><i class="fas fa-external-link-alt"></i> 点击查看</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 产品发布公告与更新日志 -->
+                                <div class="matrix-group">
+                                    <div class="matrix-group-header">
+                                        <span class="matrix-icon">📊</span>
+                                        <h5>产品发布公告与更新日志</h5>
+                                    </div>
+                                    <div class="matrix-group-articles">
+                                        <a href="https://mp.weixin.qq.com/s/5FSADKCcoO8xwLg8LuGM2Q" target="_blank" rel="noopener noreferrer" class="matrix-article-link">
+                                            <span class="article-title">海纳AI面试官11月产品迭代速览</span>
+                                            <span class="link-indicator"><i class="fas fa-external-link-alt"></i> 点击查看</span>
+                                        </a>
+                                        <a href="https://mp.weixin.qq.com/s/TVjpC1x7t4cIs1O5Uzp0QA" target="_blank" rel="noopener noreferrer" class="matrix-article-link">
+                                            <span class="article-title">海纳AI面试官全新升级，双突破、双优化、双加持、双迭代</span>
+                                            <span class="link-indicator"><i class="fas fa-external-link-alt"></i> 点击查看</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 行业趋势分析与洞察报告 -->
+                                <div class="matrix-group">
+                                    <div class="matrix-group-header">
+                                        <span class="matrix-icon">⚡</span>
+                                        <h5>行业趋势分析与洞察报告</h5>
+                                    </div>
+                                    <div class="matrix-group-articles">
+                                        <a href="https://mp.weixin.qq.com/s/kUU_NeX5tSVp3Tr0M889jg" target="_blank" rel="noopener noreferrer" class="matrix-article-link">
+                                            <span class="article-title">《CMI2024年B2B内容营销行业基准、预算及趋势》解读版发布</span>
+                                            <span class="link-indicator"><i class="fas fa-external-link-alt"></i> 点击查看</span>
+                                        </a>
+                                        <a href="https://mp.weixin.qq.com/s/nLJVWybro6H4QwwlRmURpQ" target="_blank" rel="noopener noreferrer" class="matrix-article-link">
+                                            <span class="article-title">如何打造一个高转化率的CTA？（附手册下载）</span>
+                                            <span class="link-indicator"><i class="fas fa-external-link-alt"></i> 点击查看</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 底部全宽：SVG动画营销战役 -->
+                    <div class="svg-campaign-card">
+                        <div class="campaign-badge">
+                            <i class="fas fa-star"></i> 爆款拆解
+                        </div>
+                        <h3 class="campaign-title">B2B 避坑指南 SVG 动画交互物料营销</h3>
+                        
+                        <div class="campaign-content">
+                            <div class="campaign-story">
+                                <h4>🎯 项目背景与策划思路</h4>
+                                <p>为了打破 B2B 行业资料死板、枯燥的固有印象，我独立策划了一场打破常规的营销战役。将团队之前产出的多本核心白皮书进行深度内容提炼，汇总制作成一份《市场人避坑指南》主题的 <strong>SVG 交互动画长图</strong>。</p>
+                                
+                                <h4>✨ 核心亮点与互动机制</h4>
+                                <div class="highlight-points">
+                                    <div class="hp-item">
+                                        <span class="hp-icon">🎮</span>
+                                        <div>
+                                            <strong>好玩互动</strong>
+                                            <p>利用前沿新媒体的 SVG 交互网感，把硬核的干货变成"点击触发动效"的探险式阅读，极大地引发了科技与市场圈同行大面积的互动与自发转发。</p>
+                                        </div>
+                                    </div>
+                                    <div class="hp-item">
+                                        <span class="hp-icon">🔗</span>
+                                        <div>
+                                            <strong>线索闭环</strong>
+                                            <p>通过好玩的内容引发阅读兴趣后，无缝嵌入白皮书资产包的下载链接，实现"公域曝光 → 趣味互动 → 私域获客"的完整闭环。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- 漫画插图展示 -->
+                                <div class="comic-gallery">
+                                    <div class="comic-item">
+                                        <img src="assets/comic-1-reject.png" alt="避坑指南漫画-拒绝篇">
+                                        <span class="comic-caption">市场人避坑指南 · 拒绝篇</span>
+                                    </div>
+                                    <div class="comic-item">
+                                        <img src="assets/comic-2-budget.png" alt="避坑指南漫画-预算篇">
+                                        <span class="comic-caption">市场人避坑指南 · 预算篇</span>
+                                    </div>
+                                    <div class="comic-item">
+                                        <img src="assets/comic-3-deadline.png" alt="避坑指南漫画-DDL篇">
+                                        <span class="comic-caption">市场人避坑指南 · DDL篇</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="campaign-results">
+                                <h4>🏆 惊艳战果</h4>
+                                <div class="result-stats">
+                                    <div class="result-item">
+                                        <span class="result-number">5000+</span>
+                                        <span class="result-label">单个资料下载量</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="result-number">1000+</span>
+                                        <span class="result-label">直接精准线索获客</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="result-number">20%</span>
+                                        <span class="result-label">阅读与下载转化率提升</span>
+                                    </div>
+                                </div>
+                                <!-- 市场人营销工作系列指南展示 -->
+                                <div class="marketing-guide-showcase">
+                                    <img src="assets/b2b-marketing-guide.jpg" alt="市场人营销工作系列指南">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 多渠道运营系列 -->
+                <div class="portfolio-section" data-category="multi-channel">
+                    <div class="section-intro multi-channel-intro">
+                        <h3 class="intro-title">🌐 多渠道运营体系 <span class="subtitle-en">Multi-Channel Operations</span></h3>
+                        <p class="intro-desc intro-highlight">
+                            <strong>8大渠道全链路操盘经验，从0到1搭建新媒体矩阵。</strong>
+                            深耕小红书、抖音、公众号、视频号等平台，擅长根据不同平台特性制定差异化内容策略，实现全域流量增长与私域沉淀。
+                        </p>
+                    </div>
+                    
+                    <div class="multi-channel-container">
+                        <!-- 左侧：运营数据展示 -->
+                        <div class="channel-data-card">
+                            <div class="matrix-header">
+                                <div class="matrix-icon-large">📈</div>
+                                <div class="matrix-title-group">
+                                    <h4>运营数据展示</h4>
+                                    <span class="matrix-subtitle">多平台内容运营成果</span>
+                                </div>
+                            </div>
+                            <div class="data-inline-grid">
+                                <div class="data-inline-item">
+                                    <img src="assets/数据展示-new1.png" alt="运营数据-产品介绍方案">
+                                </div>
+                                <div class="data-inline-item">
+                                    <img src="assets/数据展示-new2.png" alt="运营数据-战略分析模型">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 右侧：渠道矩阵 + 核心能力 -->
+                        <div class="channel-capabilities-card">
+                            <div class="capabilities-header">
+                                <div class="capabilities-icon">🎯</div>
+                                <div class="capabilities-title-group">
+                                    <h4>全渠道运营矩阵</h4>
+                                    <span class="capabilities-subtitle">7大平台同步发力</span>
+                                </div>
+                            </div>
+                            <div class="channel-icons-row">
+                                <div class="channel-icon-item">
+                                    <span class="channel-emoji">📕</span>
+                                    <span class="channel-name">小红书</span>
+                                </div>
+                                <div class="channel-icon-item">
+                                    <span class="channel-emoji">🎵</span>
+                                    <span class="channel-name">抖音</span>
+                                </div>
+                                <div class="channel-icon-item">
+                                    <span class="channel-emoji">💬</span>
+                                    <span class="channel-name">公众号</span>
+                                </div>
+                                <div class="channel-icon-item">
+                                    <span class="channel-emoji">📹</span>
+                                    <span class="channel-name">视频号</span>
+                                </div>
+                                <div class="channel-icon-item">
+                                    <span class="channel-emoji">📝</span>
+                                    <span class="channel-name">知乎</span>
+                                </div>
+                                <div class="channel-icon-item">
+                                    <span class="channel-emoji">📊</span>
+                                    <span class="channel-name">雪球</span>
+                                </div>
+                                <div class="channel-icon-item">
+                                    <span class="channel-emoji">📰</span>
+                                    <span class="channel-name">百家号</span>
+                                </div>
+                            </div>
+                            
+                            <div class="capabilities-divider"></div>
+                            
+                            <div class="capabilities-list">
+                                <div class="capability-item">
+                                    <div class="capability-icon">🔍</div>
+                                    <div class="capability-content">
+                                        <h5>平台特性洞察</h5>
+                                        <p>深入理解各平台算法机制与用户画像，制定差异化内容策略</p>
+                                    </div>
+                                </div>
+                                <div class="capability-item">
+                                    <div class="capability-icon">✨</div>
+                                    <div class="capability-content">
+                                        <h5>内容本地化</h5>
+                                        <p>同一主题多平台适配，实现"一次生产，多端分发"</p>
+                                    </div>
+                                </div>
+                                <div class="capability-item">
+                                    <div class="capability-icon">📈</div>
+                                    <div class="capability-content">
+                                        <h5>数据驱动优化</h5>
+                                        <p>建立多维度数据监测体系，持续优化投放ROI</p>
+                                    </div>
+                                </div>
+                                <div class="capability-item">
+                                    <div class="capability-icon">🔗</div>
+                                    <div class="capability-content">
+                                        <h5>流量闭环设计</h5>
+                                        <p>公域获客→私域承接→转化变现的完整链路搭建</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 增长运营项目 -->
+                <div class="portfolio-section" data-category="growth">
+                    <div class="section-intro highlight">
+                        <h3 class="intro-title">🚀 增长运营项目</h3>
+                        <p class="intro-desc">
+                            从0到1做增长，关键是找到"内容-渠道-转化"的飞轮。
+                            北京青年夜校是我完整操盘的项目，从抖音爆款到私域沉淀，3个月跑通了全链路。
+                        </p>
+                    </div>
+                    
+                    <div class="featured-project">
+                        <div class="featured-card yexiao-card">
+                            <div class="featured-header yexiao-header">
+                                <span class="featured-badge">⭐ 核心项目</span>
+                                <h3 class="featured-title">北京青年夜校</h3>
+                            </div>
+                            <div class="featured-content">
+                                <!-- 新布局：平台数据 + 达人合作 + 核心数据 -->
+                                <div class="yexiao-new-layout">
+                                    <!-- 平台数据部分 -->
+                                    <div class="yexiao-platform-section">
+                                        <div class="platform-header">
+                                            <span class="platform-icon">📊</span>
+                                            <h4>平台数据</h4>
+                                        </div>
+                                        <div class="platform-cards">
+                                            <div class="platform-card douyin-card">
+                                                <div class="platform-image">
+                                                    <img src="assets/抖音数据展示.png" alt="抖音数据展示">
+                                                </div>
+                                                <div class="platform-data">
+                                                    <span class="platform-number">100W+</span>
+                                                    <span class="platform-label">播放量</span>
+                                                </div>
+                                            </div>
+                                            <div class="platform-card xiaohongshu-card">
+                                                <div class="platform-image">
+                                                    <img src="assets/小红书.png" alt="小红书数据">
+                                                </div>
+                                                <div class="platform-data">
+                                                    <span class="platform-number">上千人</span>
+                                                    <span class="platform-label">咨询量</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- 达人合作部分 -->
+                                    <div class="yexiao-influencer-section">
+                                        <div class="influencer-header">
+                                            <span class="influencer-icon">🌟</span>
+                                            <h4>达人合作</h4>
+                                        </div>
+                                        <div class="influencer-content">
+                                            <div class="influencer-name">代乐乐体验</div>
+                                            <div class="influencer-gallery">
+                                                <div class="influencer-item">
+                                                    <img src="assets/代乐乐体验1.png" alt="代乐乐体验视频1">
+                                                </div>
+                                                <div class="influencer-item">
+                                                    <img src="assets/代乐乐体验2.png" alt="代乐乐体验视频2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="featured-methodology">
+                                    <h4>我的方法论</h4>
+                                    <div class="method-flow">
+                                        <div class="flow-step">
+                                            <span class="flow-icon">📱</span>
+                                            <span class="flow-text">公域获客<br><small>抖音/小红书</small></span>
+                                        </div>
+                                        <div class="flow-arrow">→</div>
+                                        <div class="flow-step">
+                                            <span class="flow-icon">💬</span>
+                                            <span class="flow-text">私域承接<br><small>微信生态</small></span>
+                                        </div>
+                                        <div class="flow-arrow">→</div>
+                                        <div class="flow-step">
+                                            <span class="flow-icon">🔄</span>
+                                            <span class="flow-text">社群裂变<br><small>接龙机制</small></span>
+                                        </div>
+                                        <div class="flow-arrow">→</div>
+                                        <div class="flow-step">
+                                            <span class="flow-icon">💰</span>
+                                            <span class="flow-text">复购转化<br><small>课程变现</small></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- 课程实景展示 -->
+                                <div class="yexiao-courses">
+                                    <h4>📸 课程实景</h4>
+                                    <div class="course-gallery">
+                                        <div class="course-item">
+                                            <img src="assets/9d33ebbf-48ed-4d3e-8b6f-dc584cee651f_d39ceaf75b738400fb6870b2d2fbd274.jpg" alt="烘焙课">
+                                            <span>烘焙课</span>
+                                        </div>
+                                        <div class="course-item">
+                                            <img src="assets/cb877121-1c3c-4b45-96ea-67922fb6dfa2_c69a468cb90ed42017501a587f9f8b0f.jpg" alt="茶艺课">
+                                            <span>茶艺课</span>
+                                        </div>
+                                        <div class="course-item">
+                                            <img src="assets/f85951ca-fd16-49af-a90e-83680477547c_71513e9426e30cb533636153ea23d6e9.jpg" alt="化妆课">
+                                            <span>化妆课</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="featured-thoughts">
+                                    <h4>关键思考</h4>
+                                    <ul class="thought-list">
+                                        <li><i class="fas fa-lightbulb"></i> 为什么选夜校这个赛道？</li>
+                                        <li><i class="fas fa-lightbulb"></i> 抖音爆款内容的共性是什么？</li>
+                                        <li><i class="fas fa-lightbulb"></i> 私域6万+用户如何精细化运营？</li>
+                                        <li><i class="fas fa-lightbulb"></i> 低价体验课到正价课的转化逻辑？</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="featured-stats yexiao-stats">
+                                    <div class="featured-stat-item stat-highlight">
+                                        <span class="featured-number">10+</span>
+                                        <span class="featured-label">百万播放视频</span>
+                                    </div>
+                                    <div class="featured-stat-item stat-highlight">
+                                        <span class="featured-number">7000+</span>
+                                        <span class="featured-label">付费学员</span>
+                                    </div>
+                                    <div class="featured-stat-item stat-highlight">
+                                        <span class="featured-number">100+</span>
+                                        <span class="featured-label">讲师资源</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="featured-highlights">
+                                    <span class="highlight-tag"><i class="fas fa-tv"></i> 央视报道</span>
+                                    <span class="highlight-tag"><i class="fas fa-newspaper"></i> 人民日报</span>
+                                    <span class="highlight-tag"><i class="fas fa-users"></i> 100+讲师资源</span>
+                                    <span class="highlight-tag"><i class="fas fa-star"></i> 头部达人合作</span>
+                                </div>
+                            </div>
+                            <button class="view-btn-full" onclick="openModal('yexiao')">
+                                <i class="fas fa-eye"></i> 查看完整项目思考
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 视频与品牌传播 -->
+                <div class="portfolio-section" data-category="video">
+                    <div class="section-intro">
+                        <h3 class="intro-title">🎬 视频与品牌传播</h3>
+                        <p class="intro-desc">
+                            视频是最直观的信任建立方式。从品牌宣传片到产品教程，从直播栏目到短视频，
+                            我关注的是：观众在前3秒会不会划走？看完后会不会产生行动？
+                        </p>
+                    </div>
+                    
+                    <!-- 视频与图片分区展示 -->
+                    <div class="video-brand-container">
+                        <!-- 左侧：视频作品 -->
+                        <div class="video-section">
+                            <div class="section-subtitle">
+                                <i class="fas fa-play-circle"></i>
+                                <h4>视频作品</h4>
+                            </div>
+                            <div class="video-grid">
+                                <div class="video-card" onclick="window.open('https://weixin.qq.com/sph/Axr3Mimc8d', '_blank')">
+                                    <div class="video-thumbnail">
+                                        <img src="assets/海纳AI宣传视频.png" alt="海纳AI面试官品牌宣传片">
+                                        <div class="play-overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+                                    <div class="video-info">
+                                        <span class="video-tag">品牌宣传片</span>
+                                        <h5>海纳AI面试官品牌宣传片</h5>
+                                        <p>点击观看视频号内容</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="video-card" onclick="window.open('https://weixin.qq.com/sph/A411aXkfL9', '_blank')">
+                                    <div class="video-thumbnail">
+                                        <img src="assets/海纳AI实操系列.png" alt="AI面试官实操指南">
+                                        <div class="play-overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+                                    <div class="video-info">
+                                        <span class="video-tag">实操系列</span>
+                                        <h5>海纳AI面试官实操指南系列</h5>
+                                        <p>点击观看视频号内容</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 右侧：品牌物料 -->
+                        <div class="brand-section">
+                            <div class="section-subtitle">
+                                <i class="fas fa-images"></i>
+                                <h4>品牌物料</h4>
+                            </div>
+                            
+                            <!-- 品牌系列长图 -->
+                            <div class="brand-series-section">
+                                <div class="brand-series-header">
+                                    <span class="brand-series-icon">🖼️</span>
+                                    <h5>一图看懂海纳AI面试官</h5>
+                                </div>
+                                <div class="brand-series-grid">
+                                    <div class="brand-series-item">
+                                        <div class="brand-series-image">
+                                            <img src="assets/海纳一指禅-蓝灰领.png" alt="一图看懂-蓝灰领场景">
+                                        </div>
+                                        <span class="brand-series-label">蓝灰领场景</span>
+                                    </div>
+                                    <div class="brand-series-item">
+                                        <div class="brand-series-image">
+                                            <img src="assets/速懂海纳AI面试官-白领.png" alt="一图看懂-白领场景">
+                                        </div>
+                                        <span class="brand-series-label">白领场景</span>
+                                    </div>
+                                    <div class="brand-series-item">
+                                        <div class="brand-series-image">
+                                            <img src="assets/海纳一指禅-在校生.png" alt="一图看懂-校招场景">
+                                        </div>
+                                        <span class="brand-series-label">校招场景</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- 客户视频拍摄 -->
+                            <div class="brand-video-section">
+                                <div class="brand-video-header">
+                                    <span class="brand-video-icon">🎬</span>
+                                    <h5>客户视频拍摄</h5>
+                                </div>
+                                <div class="brand-video-grid">
+                                    <div class="brand-video-item">
+                                        <div class="brand-video-image">
+                                            <img src="assets/客户案例-美的.png" alt="美的客户案例">
+                                        </div>
+                                        <span class="brand-video-label">美的集团</span>
+                                    </div>
+                                    <div class="brand-video-item">
+                                        <div class="brand-video-image">
+                                            <img src="assets/客户案例-星巴克.png" alt="星巴克客户案例">
+                                        </div>
+                                        <span class="brand-video-label">星巴克</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工作经历 -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">💼 工作经历</span>
+                <h2 class="section-title">职业历程</h2>
+                <p class="section-subtitle">5年+ B2B企服与全渠道内容运营经验</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025.09 - 2026.03</div>
+                        <h3 class="timeline-title">海纳AI面试</h3>
+                        <span class="timeline-role">市场运营</span>
+                        <ul class="timeline-achievements">
+                            <li>公众号涨粉2000+，全域曝光增长200%</li>
+                            <li>独立撰写《2026 AI面试发展趋势白皮书》等核心物料</li>
+                            <li>完成品牌宣传片及实操指南视频脚本与拍摄</li>
+                            <li>累计获奖5+次</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024.07 - 2025.09</div>
+                        <h3 class="timeline-title">北京青年夜校项目</h3>
+                        <span class="timeline-role">主理人</span>
+                        <ul class="timeline-achievements">
+                            <li>从0到1搭建全媒体矩阵，沉淀6W+私域用户</li>
+                            <li>抖音产出10条100W+播放量视频</li>
+                            <li>3个月实现100W流水</li>
+                            <li>获央视、人民日报等媒体报道</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021.05 - 2024.07</div>
+                        <h3 class="timeline-title">北京致趣科技</h3>
+                        <span class="timeline-role">内容运营</span>
+                        <ul class="timeline-achievements">
+                            <li>公众号"致趣百川"增粉1W+，内容线索数增长9000</li>
+                            <li>输出《B2B企业直播搭建指南》等营销手册</li>
+                            <li>全网年阅读量80W+</li>
+                            <li>从0到1搭建小红书账号</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2019.07 - 2021.04</div>
+                        <h3 class="timeline-title">搜狐</h3>
+                        <span class="timeline-role">内容运营</span>
+                        <ul class="timeline-achievements">
+                            <li>从0到1创建"狐椒"公众号，1年粉丝达3W+</li>
+                            <li>累计阅读量3900W+</li>
+                            <li>打造狐椒直播栏目，累计40+期</li>
+                            <li>负责服贸会等15+大型活动直播报道</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-avatar">
+                        <img src="assets/个人照片.jpg" alt="杨招娣" class="about-photo">
+                        <div class="avatar-decoration">
+                            <span class="deco-icon">🎯</span>
+                            <span class="deco-icon">📈</span>
+                            <span class="deco-icon">💡</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="section-badge">👋 关于我</span>
+                    <h2 class="section-title">杨招娣</h2>
+                    <p class="about-subtitle">B2B内容营销专家 | 全渠道增长操盘手</p>
+                    
+                    <div class="about-tags">
+                        <span class="about-tag">📚 汉语言文学</span>
+                        <span class="about-tag">🚀 5年+经验</span>
+                        <span class="about-tag">💡 B2B+B2C双赛道</span>
+                    </div>
+
+                    <p class="about-description">
+                        华中师范大学汉语言文学专业背景，兼具B2B科技赛道（人工智能/SaaS）的内容营销逻辑与B2C生态的高曝光私域网感。
+                    </p>
+                    <p class="about-description">
+                        从搜狐到致趣科技，从海纳AI到青年夜校项目，我经历了从0到1的完整过程，也见证了内容营销从图文到视频、从公域到私域的演变。
+                    </p>
+                    <p class="about-description">
+                        我相信，好的营销人既是 storyteller（讲故事的人），也是 data-driven（数据驱动）的增长黑客。
+                    </p>
+                    
+                    <div class="skills-section">
+                        <h3 class="skills-title">核心能力</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fas fa-pen-fancy"></i>
+                                <span>内容策划</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-book"></i>
+                                <span>白皮书撰写</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-video"></i>
+                                <span>视频脚本</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-broadcast-tower"></i>
+                                <span>直播运营</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-users"></i>
+                                <span>私域运营</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>增长转化</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="certificates">
+                        <h3 class="cert-title">持有证书</h3>
+                        <div class="cert-list">
+                            <span class="cert-item"><i class="fas fa-language"></i> 英语四级</span>
+                            <span class="cert-item"><i class="fas fa-certificate"></i> 高级语文教师资格证</span>
+                            <span class="cert-item"><i class="fas fa-laptop-code"></i> 熟练使用Office/Excel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">📬 联系我</span>
+                <h2 class="section-title">Let's 合作</h2>
+                <p class="section-subtitle">有项目想要合作？欢迎随时联系我！</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>邮箱</h3>
+                        <p>1871433253@qq.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>电话</h3>
+                        <p>15927586534</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>位置</h3>
+                        <p>中国 · 北京</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="你的名字" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="你的邮箱" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="主题">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="你想说什么..." rows="5" required></textarea>
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> 发送消息
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-quote">
+                <p class="quote-text">"内容是最好的连接器，信任是最好的转化器。"</p>
+                <p class="quote-author">—— 我的营销信条</p>
+            </div>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">✨</span>
+                    <span>杨招娣的营销作品集</span>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link" title="微信"><i class="fab fa-weixin"></i></a>
+                    <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" title="知乎"><i class="fab fa-zhihu"></i></a>
+                    <a href="mailto:1871433253@qq.com" class="social-link" title="邮箱"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 杨招娣. 用 ❤️ 和 ☕ 制作</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 作品详情弹窗 -->
+    <div id="portfolioModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body" id="modalBody">
+                <!-- 动态内容 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
